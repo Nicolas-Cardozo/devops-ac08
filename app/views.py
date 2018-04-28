@@ -69,20 +69,20 @@ def cadastro_vestibulares(request):
         'app/cadastro_vestibulares.html',
         context_instance = RequestContext(request,
         {
-           'title':'Cadastro de vestibulares',
-           'vestibulares': Vestibular.objects.all(),
-           'year':datetime.now().year,
+            'title':'Cadastro de Vestibulares',
+            'Vestibulares': Vestibular.objects.all(),
+            'year':datetime.now().year,
         })
-)
+    )
 def cadastro_candidatos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/cadastro_candidatos.html',
+        'app/cadastro_Candidatos.html',
         context_instance = RequestContext(request,
         {
-           'title':'Cadastro de Candidatos',
-           'candidatos': Candidatos.objects.all(),
-           'year':datetime.now().year,
+            'title':'Cadastro de Candidatos',
+            'candidato': Candidatos.objects.all(),
+            'year':datetime.now().year,
         })
-)
+    )

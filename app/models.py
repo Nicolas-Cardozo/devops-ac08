@@ -9,4 +9,10 @@ class Curso(models.Model):
     nome = models.CharField(max_length=200)
     periodo = models.CharField(max_length=50)
     instituicao = models.CharField(max_length=200)
+class Vestibular(models.Model):
+    nome = models.CharField(max_length=200)
+class Candidato(models.Model):
+    nome = models.CharField(max_length=100)
+    email = models.CharField(max_length=200)
+
 

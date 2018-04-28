@@ -9,9 +9,9 @@
 
 <table class="table">
   <tr><th>Nome e Email dos Candidatos</th></tr>
-    {% for Candidato in Candidatos.id %}
-      <tr><td>{{ Candidatos.nome }}</td></tr>
-      <tr><td>{{ Candidatos.email }}</td></tr>
+    {% for candidatos in candidato %}
+      <tr><td>{{ candidatos.nome }}</td></tr>
+      <tr><td>{{ candidatos.email }}</td></tr>
     {% endfor %}
 </table>
 

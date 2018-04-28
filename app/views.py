@@ -78,7 +78,7 @@ def cadastro_candidatos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/cadastro_Candidatos.html',
+        'app/cadastro_candidatos.html',
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de Candidatos',
